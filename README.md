@@ -1,3 +1,6 @@
+This diagram shows that Entities, which have their unique id, have some Components.
+It also shows that Resource, which is a singleton, has some Entities.
+We can query or update Entities on a Component-basis as well as update Resource.
 ```mermaid
 flowchart LR
 
@@ -30,6 +33,7 @@ B4[Size]
 end
 ```
 
+This diagram shows what `main()` function does.
 ```mermaid
 flowchart TD
 
