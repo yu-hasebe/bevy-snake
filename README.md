@@ -1,18 +1,18 @@
 ```mermaid
 flowchart LR
 
+subgraph Snake Resource
+D1>SnakeHead Entity]
+D2>SnakeSegment Entities]
+D3>Direction]
+D4>LastTailPosition]
+end
+
 subgraph Food Entity
 A1[SpriteBundle]
 A2[Food]
 A3[Position]
 A4[Size]
-end
-
-subgraph SnakeHead Entity
-B1[SpriteBundle]
-B2[SnakeHead]
-B3[Position]
-B4[Size]
 end
 
 subgraph SnakeSegment Entity
@@ -22,11 +22,11 @@ C3[Position]
 C4[Size]
 end
 
-subgraph Snake Resource
-D1>SnakeHead Entity]
-D2>SnakeSegment Entities]
-D3>Direction]
-D4>LastTailPosition]
+subgraph SnakeHead Entity
+B1[SpriteBundle]
+B2[SnakeHead]
+B3[Position]
+B4[Size]
 end
 ```
 
