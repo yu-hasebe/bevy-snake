@@ -100,10 +100,11 @@ fn main() {
         .add_systems(Update, snake_direction_input.before(snake_movement))
         .add_systems(
             Update,
-            (snake_movement, game_over, snake_eating, snake_growth)
+            (snake_movement, snake_eating, snake_growth)
                 .chain()
                 .run_if(on_timer(Duration::from_millis(150))),
         )
+        .add_systems(Update, game_over.after(snake_movement))
         .add_systems(
             Update,
             spawn_food.run_if(on_timer(Duration::from_millis(1000))),
